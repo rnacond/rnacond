@@ -14,12 +14,3 @@ You can overwrite any other argument that is in the `yaml` config files of the m
 
 You can pass any argument to the `lightning` trainer if its name in the command line starts with `trainer_`.
 
-[Slides](https://drive.google.com/file/d/1vmQJMrHiTb8uT2yFM5g5_GVjld05HSTi/view?usp=sharing)
-
-[Miro Board](https://miro.com/app/board/uXjVLLD-o_k=/?share_link_id=639489781277)
-
-[Google Doc](https://docs.google.com/document/d/1Yk7ZRqrsGHYlCdbN6k_0w0-gCQboKnYNkXU-G-mbPRI/edit?usp=sharing)
-
-[wandb](https://wandb.ai/deeplife?shareProfileType=copy)
-
-[Notion](https://www.notion.so/Conditional-Generative-Models-Experiments-1982dd0947f98072a84dfdafb92b051d?showMoveTo=true&saveParent=true)
