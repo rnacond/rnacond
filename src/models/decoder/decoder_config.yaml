@@ -1,0 +1,49 @@
+---
+model_config:  
+  embedding_dim: 64
+  num_heads: 4 
+  num_layers: 6
+  dropout: 0.1
+  position: 'embedding'
+  pretrained_embeddings: False
+  fix_embeddings: False # fix the pretrained embeddings or not
+
+dataset_config:
+  num_total_counts: 1000
+  metadata_names: 
+    - 'disease_colon'
+    - 'tissue_unified'
+  metadata_mask_prob: 0.1
+  metadata_position: 'start'
+  block_size: 512
+  sample: False
+  shuffle: True
+  shuffle_metadata: False
+
+lightning_config:
+  optimizer: 'adamw'
+  scheduler: 'steplr' #or cosine lr
+  learning_rate: 0.0003
+  num_epochs: 100
+  step_size: 10
+  verbose: True
+
+dataloader_config:
+  batch_size: 8
+  num_workers: 8
+  drop_last: True
+  sampler: False
+
+preprocess_config:
+  variable_genes: null
+  gene_name_col: null
+  max_total_counts: null
+  normalize: False
+  target_sum: null
+  round: False # Round values
+  log: False # Log values
+  only_keep_prompts: False
+  prompts: [{}]
+  log_base: 2
+  min_genes: null
+  min_cells: null
