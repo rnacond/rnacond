@@ -283,7 +283,7 @@ def compare_DGEs(real_up: list[int], real_down: list[int], real_same: list[int],
         dict[str, float]: contains output of dge_precision_recall, enrichment_precision_recall and distances between LFCs
     """
     
-    dict1 = dges_precision_recall(real_up, real_down, real_same, pred_up, pred_down)
+    dict1 = dges_precision_recall(real_up, real_down, len(real_lfcs), pred_up, pred_down)
     dict2, dict3, dict4 = {}, {}, {}
     
     try:
